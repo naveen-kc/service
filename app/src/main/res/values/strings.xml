@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tech Active</string>
+    <string name="google_maps_api_key">AIzaSyBgMQWNZlu_lOCpKIVjU4MxpankKThAeO8</string>
+    <string name="showing_current_location">Showing Current Location</string>
+
+
+</resources>

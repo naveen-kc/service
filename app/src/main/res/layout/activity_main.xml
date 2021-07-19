@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashBoard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+
+            >
+
+        </TextView>
+
+
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_below="@+id/time"
+            />
+
+
+
+        <Button
+            android:id="@+id/fetch"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/burtton"
+            android:gravity="center"
+            android:text="Fetch"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_below="@+id/map"
+            android:layout_marginTop="20dp"
+
+
+            />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="back"
+            android:textColor="@color/pink"
+            android:textSize="25sp"
+            android:layout_below="@+id/fetch"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+
+
+            />
+
+    </RelativeLayout>
+</ScrollView>
